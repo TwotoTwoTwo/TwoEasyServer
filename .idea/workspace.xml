@@ -23,80 +23,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9daebaca-0438-41c4-abf2-af2fd6421a09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/Util/StringCheckUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/AuthorizeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/dao/GoodsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/Request/GoodsGetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/Request/LoginRequset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/Request/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/result/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/AuthorizeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/AuthorizeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/UserServiceIml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yiban/open/Authorize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yiban/open/FrameUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yiban/open/common/Friend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yiban/open/common/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yiban/util/AESDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/yiban/util/HTTPSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_13_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwoEasyServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TwoEasyServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/ImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-pro.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/entity/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/wsjiu/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/wsjiu/result/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/result/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/UserServiceIml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/wsjiu/service/impl/UserServiceIml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TwoEasyServer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TwoEasyServer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TwoEasyServer-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/TwoEasyServer-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/controller/GoodsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/dao/GoodsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/dao/GoodsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/entity/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/entity/Goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/entity/Request/GoodsGetRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/entity/Request/GoodsGetRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/result/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/result/ResultCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/result/ResultCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/service/GoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/service/impl/GoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/wsjiu/service/impl/UserServiceIml.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/wsjiu/service/impl/UserServiceIml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,10 +87,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -209,14 +164,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="141" y="41" width="1084" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1604289135967" />
-    <state x="368" y="176" width="620" height="414" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604077809148">
+    <state x="368" y="176" width="835" height="414" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605631863295">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="368" y="176" width="620" height="414" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1604077809148" />
-    <state x="491" y="67" width="374" height="632" key="#com.intellij.ide.util.MemberChooser" timestamp="1605519436178">
+    <state x="368" y="176" width="835" height="414" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1605631863295" />
+    <state x="491" y="67" width="374" height="632" key="#com.intellij.ide.util.MemberChooser" timestamp="1605871400384">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="491" y="67" width="374" height="632" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1605519436178" />
+    <state x="491" y="67" width="374" height="632" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1605871400384" />
     <state x="415" y="188" width="525" height="421" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604305249130">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -225,46 +180,46 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="301" y="125" width="744" height="518" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1604283375816" />
-    <state width="1312" height="221" key="GridCell.Tab.0.bottom" timestamp="1605535894305">
+    <state width="1312" height="173" key="GridCell.Tab.0.bottom" timestamp="1605875578019">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1605535894305" />
-    <state width="1312" height="221" key="GridCell.Tab.0.center" timestamp="1605535894304">
+    <state width="1312" height="173" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1605875578019" />
+    <state width="1312" height="173" key="GridCell.Tab.0.center" timestamp="1605875578018">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1605535894304" />
-    <state width="1312" height="221" key="GridCell.Tab.0.left" timestamp="1605535894303">
+    <state width="1312" height="173" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1605875578018" />
+    <state width="1312" height="173" key="GridCell.Tab.0.left" timestamp="1605875578018">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1605535894303" />
-    <state width="1312" height="221" key="GridCell.Tab.0.right" timestamp="1605535894305">
+    <state width="1312" height="173" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1605875578018" />
+    <state width="1312" height="173" key="GridCell.Tab.0.right" timestamp="1605875578019">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1605535894305" />
-    <state width="1312" height="221" key="GridCell.Tab.1.bottom" timestamp="1605535901378">
+    <state width="1312" height="173" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1605875578019" />
+    <state width="1312" height="214" key="GridCell.Tab.1.bottom" timestamp="1605875575068">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1605535901378" />
-    <state width="1312" height="221" key="GridCell.Tab.1.center" timestamp="1605535901376">
+    <state width="1312" height="214" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1605875575068" />
+    <state width="1312" height="214" key="GridCell.Tab.1.center" timestamp="1605875575067">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1605535901376" />
-    <state width="1312" height="221" key="GridCell.Tab.1.left" timestamp="1605535901375">
+    <state width="1312" height="214" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1605875575067" />
+    <state width="1312" height="214" key="GridCell.Tab.1.left" timestamp="1605875575067">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1605535901375" />
-    <state width="1312" height="221" key="GridCell.Tab.1.right" timestamp="1605535901377">
+    <state width="1312" height="214" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1605875575067" />
+    <state width="1312" height="214" key="GridCell.Tab.1.right" timestamp="1605875575068">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1312" height="221" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1605535901377" />
+    <state width="1312" height="214" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1605875575068" />
     <state x="266" y="128" width="824" height="509" key="IDE.errors.dialog" timestamp="1605525677180">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="266" y="128" width="824" height="509" key="IDE.errors.dialog/0.0.1366.768@0.0.1366.768" timestamp="1605525677180" />
-    <state x="166" y="0" width="1024" height="768" key="SettingsEditor" timestamp="1605516980000">
+    <state x="166" y="0" width="1024" height="768" key="SettingsEditor" timestamp="1605536376211">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="166" y="0" width="1024" height="768" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1605516980000" />
+    <state x="166" y="0" width="1024" height="768" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1605536376211" />
     <state x="161" y="48" width="1034" height="720" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1604552763705">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -273,10 +228,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="373" y="78" width="615" height="624" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1604682369003" />
-    <state x="346" y="89" key="search.everywhere.popup" timestamp="1604491626391">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605629780235">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1604491626391" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1605629780235" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,11 +245,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/cn/wsjiu/Util/StringCheckUtils.java</url>
           <line>8</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/wsjiu/controller/GoodsController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,6 +8,11 @@ import cn.wsjiu.service.GoodsService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.sql.DatabaseMetaData;
+import java.sql.Time;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -17,13 +22,14 @@ public class GoodsServiceImpl implements GoodsService {
 
     @Override
     public Result<Void> publishGoods(Goods goods) {
+        goods.setTime(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         try{
             goodsDAO.insert(goods);
         }catch (Exception e) {
-            return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+            return new Result<Void>(ResultCode.MYSQL_ERROR.getCode(),
                     "插入异常" + e.toString());
         }
-        return new Result<>(ResultCode.SUCCESS);
+        return new Result<Void>(ResultCode.SUCCESS);
     }
 
     @Override
@@ -31,14 +37,14 @@ public class GoodsServiceImpl implements GoodsService {
         try{
             int match = goodsDAO.update(goods);
             if(match <= 0) {
-                return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+                return new Result<Void>(ResultCode.MYSQL_ERROR.getCode(),
                         "更新失败，没有匹配的物品");
             }
         }catch (Exception e) {
-            return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+            return new Result<Void>(ResultCode.MYSQL_ERROR.getCode(),
                     "更新异常" + e.toString());
         }
-        return new Result<>(ResultCode.SUCCESS);
+        return new Result<Void>(ResultCode.SUCCESS);
     }
 
     @Override
@@ -46,12 +52,12 @@ public class GoodsServiceImpl implements GoodsService {
         try{
             List<Goods> goodsList = goodsDAO.queryByGoodsId(goodsId);
             if(goodsList == null || goodsList.size() == 0) {
-                return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+                return new Result<List<Goods>>(ResultCode.MYSQL_ERROR.getCode(),
                         "goodsId 不存在");
             }
-            return new Result<>(goodsList);
+            return new Result<List<Goods>>(goodsList);
         }catch (Exception e) {
-            return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+            return new Result<List<Goods>>(ResultCode.MYSQL_ERROR.getCode(),
                     "查询异常" + e.toString());
         }
     }
@@ -60,9 +66,9 @@ public class GoodsServiceImpl implements GoodsService {
     public Result<List<Goods>> queryByUserId(int userId, int page, int pageSize) {
         try{
             List<Goods> goodsList = goodsDAO.queryByUserId(userId, page, pageSize);
-            return new Result<>(goodsList);
+            return new Result<List<Goods>>(goodsList);
         }catch (Exception e) {
-            return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+            return new Result<List<Goods>>(ResultCode.MYSQL_ERROR.getCode(),
                     "查询异常" + e.toString());
         }
     }
@@ -71,9 +77,9 @@ public class GoodsServiceImpl implements GoodsService {
     public Result<List<Goods>> queryByLabel(String label, int page, int pageSize) {
         try{
             List<Goods> goodsList = goodsDAO.queryByLabel(label, page, pageSize);
-            return new Result<>(goodsList);
+            return new Result<List<Goods>>(goodsList);
         }catch (Exception e) {
-            return new Result<>(ResultCode.MYSQL_ERROR.getCode(),
+            return new Result<List<Goods>>(ResultCode.MYSQL_ERROR.getCode(),
                     "查询异常" + e.toString());
         }
     }

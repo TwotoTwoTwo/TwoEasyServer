@@ -18,7 +18,7 @@ public class Result<T> {
     }
 
     public Result(int code, String msg) {
-        this.success = false;
+        this.success = code == ResultCode.SUCCESS.getCode();
         this.code = code;
         this.msg = msg;
     }

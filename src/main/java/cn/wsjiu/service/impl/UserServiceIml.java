@@ -6,7 +6,6 @@ import cn.wsjiu.result.ResultCode;
 import cn.wsjiu.service.UserService;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Service;
-
 import javax.annotation.Resource;
 
 @Service
@@ -19,6 +18,7 @@ public class UserServiceIml implements UserService {
         User user = userDAO.query(accountName);
         if(user != null) {
             if(password.equals(user.getPassword())) {
+                user.setPassword(null);
                 return new Result<User>(user);
             }else {
                 return new Result<User>(ResultCode.PASSWORD_ERROR);

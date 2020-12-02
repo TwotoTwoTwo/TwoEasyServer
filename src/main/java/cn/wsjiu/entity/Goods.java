@@ -1,5 +1,6 @@
 package cn.wsjiu.entity;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Goods {
@@ -11,7 +12,7 @@ public class Goods {
     private Float sellPrice;
     private Float  buyPrice;
     private String label;
-    private Date time;
+    private String time;
 
     public Integer getGoodsId() {
         return goodsId;
@@ -77,11 +78,11 @@ public class Goods {
         this.label = label;
     }
 
-    public Date getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Date time) {
+    public void setTime(String time) {
         this.time = time;
     }
 }
