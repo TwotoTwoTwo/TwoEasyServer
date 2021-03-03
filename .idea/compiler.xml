@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TwoEasyServer" />
+        <module name="Server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="TwoEasyServer" target="11" />
+    <bytecodeTargetLevel target="8">
+      <module name="IM" target="1.8" />
+      <module name="Server" target="1.8" />
+      <module name="TwoEasyServer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

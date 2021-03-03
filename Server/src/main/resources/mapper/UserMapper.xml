@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wsjiu.server.dao.UserDAO">
+    <select id="query" resultType="cn.wsjiu.server.entity.User" parameterType="java.lang.String">
+        SELECT *
+        FROM user where accountName = #{accountName}
+    </select>
+    <select id="queryUsers" resultType="cn.wsjiu.server.entity.User" parameterType="java.lang.String">
+        SELECT userId, headUrl, userName, userNickName, schoolId, schoolName, sex,
+        declaration FROM user where userId in
+        <foreach collection="collection" open="(" separator="," close=")" item="userId">
+            #{userId}
+        </foreach>
+    </select>
+    <insert id="insert" parameterType="cn.wsjiu.server.entity.User"
+            useGeneratedKeys="true" keyProperty="userId" keyColumn="userId">
+        insert user(headUrl, accountName, password, userName,
+        userNickName, schoolId, schoolName, sex, yibanId)
+        values(#{headUrl}, #{accountName}, #{password}, #{userName}, #{userNickName},
+        #{schoolId}, #{schoolName}, #{sex}, #{yibanId})
+    </insert>
+    <update id="update" parameterType="cn.wsjiu.server.entity.User">
+        update user
+        <set>
+            <if test="headUrl != null">
+                headUrl = #{headUrl},
+            </if>
+            <if test="userName != null">
+                userName = #{userName},
+            </if>
+            <if test="declaration != null">
+                declaration = #{declaration}
+            </if>
+        </set>
+        where userId = #{userId}
+    </update>
+</mapper>
